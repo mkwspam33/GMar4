@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmdb_ci" label="Virtual Private Cloud" max_length="40" name="cmdb_ci_vpc" sizeclass="0" type="collection">
+        <element choice="1" label="State" max_length="40" name="state" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Available" sequence="1" value="available"/>
+                <element inactive_on_update="false" label="Pending" sequence="2" value="pending"/>
+                <element inactive_on_update="false" label="Terminated" sequence="3" value="terminated"/>
+            </choice>
+        </element>
+    </element>
+</database>
